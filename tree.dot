@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="PctKids2Par <= 0.695\nsamples = 1993\nvalue = [743, 1250]\nclass = False", fillcolor="#399de567"] ;
+1 [label="racePctWhite <= 0.915\nsamples = 1197\nvalue = [178, 1019]\nclass = False", fillcolor="#399de5d2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="racePctWhite <= 0.805\nsamples = 989\nvalue = [72, 917]\nclass = False", fillcolor="#399de5eb"] ;
+1 -> 2 ;
+3 [label="samples = 749\nvalue = [22, 727]\nclass = False", fillcolor="#399de5f7"] ;
+2 -> 3 ;
+4 [label="samples = 240\nvalue = [50, 190]\nclass = False", fillcolor="#399de5bc"] ;
+2 -> 4 ;
+5 [label="HousVacant <= 0.055\nsamples = 208\nvalue = [106, 102]\nclass = True", fillcolor="#e581390a"] ;
+1 -> 5 ;
+6 [label="samples = 161\nvalue = [95, 66]\nclass = True", fillcolor="#e581394e"] ;
+5 -> 6 ;
+7 [label="samples = 47\nvalue = [11, 36]\nclass = False", fillcolor="#399de5b1"] ;
+5 -> 7 ;
+8 [label="racePctHisp <= 0.075\nsamples = 796\nvalue = [565, 231]\nclass = True", fillcolor="#e5813997"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="PctKids2Par <= 0.805\nsamples = 599\nvalue = [481, 118]\nclass = True", fillcolor="#e58139c0"] ;
+8 -> 9 ;
+10 [label="samples = 249\nvalue = [166, 83]\nclass = True", fillcolor="#e581397f"] ;
+9 -> 10 ;
+11 [label="samples = 350\nvalue = [315, 35]\nclass = True", fillcolor="#e58139e3"] ;
+9 -> 11 ;
+12 [label="PctKids2Par <= 0.785\nsamples = 197\nvalue = [84, 113]\nclass = False", fillcolor="#399de541"] ;
+8 -> 12 ;
+13 [label="samples = 117\nvalue = [32, 85]\nclass = False", fillcolor="#399de59f"] ;
+12 -> 13 ;
+14 [label="samples = 80\nvalue = [52, 28]\nclass = True", fillcolor="#e5813976"] ;
+12 -> 14 ;
+}
